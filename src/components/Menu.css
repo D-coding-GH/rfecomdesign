@@ -1,0 +1,24 @@
+
+.menuSpace{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.men{
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.women{
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.equipment{
+    margin: 10px;
+    padding: 20px;
+
+}
