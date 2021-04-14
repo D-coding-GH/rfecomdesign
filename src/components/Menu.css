@@ -1,24 +1,87 @@
+.container {
+  margin-top: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.menuSpace{
+.menu-item {
+  width: 200px;
+  perspective: 2000px;
+}
+
+.sub-menu1 {
+  position: relative;
+  left: 25%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  width: 100vw;
+  background-color: rgb(248, 15, 15);
+  border-radius: 6px;
+  transform-origin: 50% 30px;
+}
+
+.sub-menu {
+    position: relative;
+    left: 125%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    width: 100vw;
+    background-color: rgb(252, 248, 248);
+    border-radius: 6px;
+    transform-origin: 50% 30px;
+  }
+
+  .sub-menu2 {
+    position: relative;
+    right:75%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    width: 100vw;
+    background-color: rgb(248, 15, 15);
+    border-radius: 6px;
+    transform-origin: 50% 30px;
+  }
+
+
+/* .sub-menu-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+} */
+
+.sub-menu-container {
+    height: 50vh;
+  }
+
+.sub-menu-item {
+  margin-bottom: 5px;
+}
+
+.titles1{
+    margin-top: 10px; 
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 20vh;
 }
 
-.men{
-    margin: 10px;
-    padding: 20px;
-
-}
-
-.women{
-    margin: 10px;
-    padding: 20px;
-
-}
-
-.equipment{
-    margin: 10px;
-    padding: 20px;
-
+.menuLinks{
+    margin-top: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 20vh;
 }
