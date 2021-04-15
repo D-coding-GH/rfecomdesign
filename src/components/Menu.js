@@ -148,7 +148,7 @@ const Menu = () => {
                 <div className="sub-menu-background" />
                 <div className="sub-menu-container">
                 <div className="titles1">
-                    <h1>EQUIPMENT</h1>
+                    <h1>EQUIPMENT/watches</h1>
                     <h1>EQUIPMENT</h1>
                     <h1>EQUIPMENT</h1>
                   </div>
