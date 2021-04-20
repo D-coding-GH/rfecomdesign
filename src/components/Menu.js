@@ -38,16 +38,16 @@ const Menu = () => {
       }
     };
     return (
-      <div className="App">
+      <div>
         <div className="container">
-          <div className="flex-item">
-            <motion.div
+          <div>
+            <motion.div 
               className="menu-item"
               onHoverStart={toggleHoverMenu}
               onHoverEnd={toggleHoverMenu}
             >
               <h1>MEN</h1>
-              <motion.div
+              <motion.div 
                 className="sub-menu"
                 initial="exit"
                 animate={isHover ? "enter" : "exit"}
@@ -78,15 +78,12 @@ const Menu = () => {
                       <div>COLLECTION</div>
                     </div>
                   </div>
-                  {/* <div className="sub-menu-item">Submenu Item 2</div>
-                  <div className="sub-menu-item">Submenu Item 3</div>
-                  <div className="sub-menu-item">Submenu Item 4</div>
-                  <div className="sub-menu-item">Submenu Item 5</div> */}
+               
                 </div>
               </motion.div>
             </motion.div>
           </div>
-          <div className="flex-item">
+          <div >
             <motion.div
               className="menu-item"
               onMouseEnter={toggleHoverMenu1}
@@ -124,15 +121,12 @@ const Menu = () => {
                       <div>COLLECTION</div>
                     </div>
                   </div>
-                  {/* <div className="sub-menu-item">Submenu Item 2</div>
-                  <div className="sub-menu-item">Submenu Item 3</div>
-                  <div className="sub-menu-item">Submenu Item 4</div>
-                  <div className="sub-menu-item">Submenu Item 5</div> */}
+                
                 </div>
               </motion.div>
             </motion.div>
           </div>
-          <div className="flex-item">
+          <div>
             <motion.div
               className="menu-item"
               onMouseEnter={toggleHoverMenu2}
@@ -155,7 +149,7 @@ const Menu = () => {
                 </div>
               </motion.div>
             </motion.div>
-          </div>
+          </div>{" "}
         </div>
       </div>
     );

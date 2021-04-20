@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import Carousel1 from './Carosel1'
+import Promo from './Promo';
+import './home.css';
+import Header from "./Header";
+
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='home'>
                 
-                <Carousel1/>
-                
+                <Promo/>
             </div>
         );
     }
 }
 
 export default Home;
-
-//.......Carose1
-//.......Carosel2
-//.......Recent Arrival

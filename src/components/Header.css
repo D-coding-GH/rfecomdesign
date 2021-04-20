@@ -1,4 +1,15 @@
-.menuPosition {
-    display: flex;
-    justify-content: center 
-}
+body {
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    position: absolute;
+  }
+  
+  .carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    z-index: -2;
+   }
+  
+
+  
