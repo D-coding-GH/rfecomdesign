@@ -1,15 +1,19 @@
-body {
-  background-color: rgb(255, 255, 255);
-  z-index: 0;
-  position: absolute;
-}
 
-.positonC{
-    z-index: 0;   
-}
 
 .carousel * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
- }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.transitionposition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing:inherit;
+  margin-left:-50%;
+  margin-left: -48.5vw;
+}
+
