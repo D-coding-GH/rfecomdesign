@@ -1,15 +1,26 @@
-body {
-    background-color: rgb(255, 255, 255);
-    z-index: 4;
-    position: absolute;
-  }
-  
-  .carousel.carousel-slider {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-    z-index: -2;
-   }
-  
+.container {
+  height: 26%;
+}
 
-  
+h1 {
+  margin: 0%;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  margin-right: 87%;
+}
+
+.header-positions {
+  position: relative;
+  margin-left: 92%;
+  margin-top: -2%;
+}
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  z-index: -2;
+}

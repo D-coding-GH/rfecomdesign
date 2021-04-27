@@ -39,7 +39,7 @@ const Menu = () => {
     };
     return (
       <div>
-        <div className="container">
+        <div className="container-menu">
           <div>
             <motion.div 
               className="menu-item"
