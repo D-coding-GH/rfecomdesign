@@ -29,25 +29,43 @@
 
 .sub-login {
   position: absolute;
-  left: 125%;
-  margin-left: -100vw;
-  margin-right: -50vw;
+  left: 210%;
+  
+  margin-left: -66vw;
+  margin-right: -100vw;
   max-width: 100vw;
-  width: 100vw;
-  background-color: rgb(252, 248, 248);
+  width: 50vw;
+  background-color: rgb(255, 255, 255);
   border-radius: 6px;
   transform-origin: 50% 30px;
   
 }
 
 .sub-menu-containerlogin {
-  height: 80vh;
+  height: 20vh;
   position: relative;
   background-color: rgb(255, 255, 255);
-  
-  
+  padding: 0%;
 }
 
+.loginposition{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.formposition1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-bottom: 3px solid rgba(0,0,0,1)
+}
 
 .sub-menu-background{
   position: absolute;
@@ -59,8 +77,6 @@
   background-color: rgb(255, 255, 255);
   
 }
-
-
 
 
 .sub-menu {
@@ -90,7 +106,6 @@
   border-radius: 6px;
   transform-origin: 50% 30px;
 }
-
 
 
 

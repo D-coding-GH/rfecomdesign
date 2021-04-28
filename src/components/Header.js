@@ -10,9 +10,8 @@ class Header extends Component {
   render() {
     return (
       <div className="container">
-        <h1>header</h1>
+        <h3>header</h3>
         <div className="header-positions">
-          {/* <h1>header</h1> */}
           <LoginREG />
         </div>
         <div>
