@@ -7,11 +7,12 @@ import './home.css';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="homeorder" >
                 
-                <Promo/>
+                  <Promo/>
+                 
             </div>
-        );
+        ); 
     }
 }
 

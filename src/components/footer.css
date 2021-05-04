@@ -1,0 +1,12 @@
+.footer-container {
+    background-color: rgba(194, 189, 189, 0.589);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border: 1%;
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+    /* position: relative; */
+  }

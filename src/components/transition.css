@@ -1,10 +1,18 @@
 #trans {
-  position: absolute;
+  position: relative;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  width: 50%;
+ 
+   
+}
+
+#size{
+ 
+  width:50vh;
+ 
+
 }
 
 @keyframes cf3FadeInOut {
@@ -22,10 +30,43 @@
   }
 }
 
-.top {
+.top1 {
   animation-name: cf3FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 3s;  
   animation-direction: alternate;
+  position: relative;
+right: 10%;
+ 
 }
+
+.bottom1{
+  
+  
+  
+}
+
+
+
+
+
+
+.top2 {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;  
+  animation-direction: alternate;
+  position: relative;
+  
+  
+  
+}
+
+.bottom2{
+ 
+  
+  
+}
+

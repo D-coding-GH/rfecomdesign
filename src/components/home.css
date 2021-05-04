@@ -1,19 +1,14 @@
-
 .carousel * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
 .transitionposition {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-direction: row;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing:inherit;
-  margin-left:-50%;
-  margin-left: -48.5vw;
+  box-sizing: border-box;
 }
-

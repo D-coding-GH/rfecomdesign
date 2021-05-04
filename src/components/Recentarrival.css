@@ -1,0 +1,12 @@
+.rec-container {
+  background-color: rgb(243, 140, 140);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  margin-top: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* position: absolute; */
+}

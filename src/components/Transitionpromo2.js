@@ -7,9 +7,9 @@ import "./transition.css"
 const Transitionpromo2 = () => {
 
 return (
-  <div className="imagesize">
-    <img id="trans" class="bottom" src={imagetest1} />
-    <img id="trans" class="top" src={imagetest2} />
+  <div className="transitionposition2"id="trans2" id="size" >
+    <img  class="bottom2" src={imagetest1} />
+    <img  class="top2" src={imagetest2} />
   </div>
 );
 }
