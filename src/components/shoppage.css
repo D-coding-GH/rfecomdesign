@@ -1,5 +1,5 @@
 .shopwrapper{
-    background-color: rgba(233, 25, 25, 0.589);
+    background-color: rgba(230, 136, 136, 0.589);
     margin-right: auto;
     margin-left: auto;
     padding-right: 30px;
@@ -58,7 +58,7 @@
     margin-left: 5vh;
 }
 
-.trainerinfo{
+.card-wrapper{
     margin-left: 5vh;
     margin-right: 50vh;
     padding-bottom: 10px;
