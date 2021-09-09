@@ -1,10 +1,22 @@
-import React, {useRef,useState} from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
+import axios from 'axios'
 import "./Menu.css";
 
 const LoginREG = () => {
-  const [logHover, toggleHover3] = React.useState(false);
-  const toggleHoverlogin = () => {
+  const [logHover, toggleHover3] = useState(false);
+ 
+  const [regUser,sendUser] = useState({
+    name:'',
+    email:'',
+    password:'',
+    // ConfirmPassword:''
+  })
+
+  const {rName,rEmail,rPassword} = regUser
+  
+
+ const toggleHoverlogin = () => {
     toggleHover3(!logHover);
   };
 
@@ -30,6 +42,33 @@ const LoginREG = () => {
     },
   };
 
+  // const regChange = event => {
+  //   const  { name, value} = event.target
+ 
+ 
+  //   sendUser({...regUser, [name]:value})
+  //   console.log(sendUser)
+  //   console.log(regUser)
+  // }
+
+
+
+ const regSubmit = async event => {
+   event.preventDefault();
+
+   const  { name, value} = event.target
+ 
+ 
+    sendUser({...regUser, [name]:value})
+    console.log('hellosend',sendUser)
+    console.log('helloreg',regUser)
+
+
+  await axios.post('/createUser',  {name:regUser.name,email:regUser.email,password:regUser.password})
+   console.log('hellosend',{name:regUser.name,email:regUser.email,password:regUser.password })
+   
+ }
+
   return (
     <div className="container-menu">
       <div>
@@ -49,7 +88,7 @@ const LoginREG = () => {
             <div className="sub-menu-containerlogin"></div>
             <div className="loginposition">
               <div>
-                <form className="formposition1">
+                <form className="formposition1"  >
                   <h2>login</h2>
                   <label>Email</label>
                   <input type="email" name="" />
@@ -62,25 +101,51 @@ const LoginREG = () => {
                   <button type="submit">login</button>
                 </form>
 
-                <form className="formposition1" >
+                <form className="formposition1" onSubmit={regSubmit} >
                   <h2>register</h2>
-                  <label>First name</label>
-                  <input type="text" name="" />
-                  <br />
-
-                  <label>last name</label>
-                  <input type="text" name="" />
+                  <label>Name</label>
+                  <input 
+                  type="text"
+                  name ='name'
+                  value={rName}
+                  onChange={regSubmit}
+                  />
                   <br />
 
                   <label>Email</label>
-                  <input type="email" name="" />
+                  <input 
+                  type="email"
+                  name='email' 
+                  value={rEmail}
+                  onChange={regSubmit}
+                  label='email'
+                  required
+                  />
                   <br />
 
                   <label>Password</label>
-                  <input type="password" name="" />
+                  <input 
+                  type="password"
+                  name='password' 
+                   value={rPassword}
+                   onChange={regSubmit}
+                   label='password'
+                   required
+                  />
                   <br />
 
-                  <button type="submit">login</button>
+                  {/* <label>confirm Password</label>
+                  <input 
+                  type="password"
+                  name='confirm password' 
+                   value={rConfirmPassword}
+                   handleChange={regChange}
+                   label=' confirm password'
+                   required
+                  />
+                  <br /> */}
+
+                  <button type="submit">sign up</button>
                 </form>
               </div>
             </div>
