@@ -1,4 +1,4 @@
-.shopwrapper{
+.productwrapper{
     background-color: rgba(146, 116, 116, 0.589);
     margin-right: auto;
     margin-left: auto;
@@ -7,7 +7,7 @@
     padding-top: 10px;
 }
 
-.shoprow{
+.productrow{
     display: flex;
     flex-direction:row;
 }
@@ -45,6 +45,11 @@
     width:70vh;
     padding-top: 30px
     
+}
+
+.heart{
+    width:30px,
+    red
 }
 
 .function-container{
